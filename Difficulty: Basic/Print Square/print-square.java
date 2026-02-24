@@ -1,20 +1,19 @@
-import java.util.*;
-
-public class Solution {
-    public static void solve() {
-        // Your Code Here
-        Scanner sc= new Scanner(System.in);
-        int n=sc.nextInt();
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                if(j==0||j==n-1||i==0||i==n-1){
+// User function Template for Java
+class Solution {
+    public static void square(int s) {
+        // Complete the code given below
+        for(int i = 0; i < s; i++){
+            for(int j = 0; j < s; j++){
+                if(j == 0 || j == s-1 || i == 0 || i == s-1){
                     System.out.print("*"+" ");
                 }
                 else{
                     System.out.print("  ");
                 }
             }
-            System.out.println();
+            System.out.println();  // move to next line
         }
     }
 }
+
+
