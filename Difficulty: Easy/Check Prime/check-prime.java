@@ -1,12 +1,23 @@
-class Solution {
-    public static boolean prime(int n) {
-        if (n <= 1) return false;
+import java.util.*;
 
-        for (int i = 2; i <= n / 2; i++) {
-            if (n % i == 0) {
-                return false; // not prime
+public class Solution {
+    public static void main(String args[]) {
+        // Your Code Here
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int flag=0;
+        for(int i=1;i<=n/2;i++){
+            if(n%i==0&&i!=1){
+                flag=1;
+                break;
             }
         }
-        return true; // prime
+        if(flag==1){
+            System.out.println("False");
+        }
+        else{
+            System.out.println("True");
+        }
+        
     }
 }
