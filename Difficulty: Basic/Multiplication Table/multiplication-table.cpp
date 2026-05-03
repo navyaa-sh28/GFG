@@ -1,12 +1,14 @@
-// User function Template for C++
-class Solution {
-  public:
-    vector<int> getTable(int n) {
-        //  Code here
-        vector<int> Table(10);
-        for(int i=1;i<=10;i++){
-            Table[i-1]=i*n;
-        }
-        return Table;
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    for (int i = 1; i <= 10; i++) {
+        cout << n * i;
+        if (i < 10) cout << " ";
     }
-};
+
+    return 0;
+}
